@@ -5,7 +5,7 @@
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
@@ -57,7 +57,7 @@
     it('should accept a project title', function() {
       var topdoc;
       topdoc = new Topdoc({
-        source: this.srcDir, 
+        source: this.srcDir,
         destination: this.outputDir,
         templateData: {
           title: 'awesomeness'
@@ -274,8 +274,8 @@
       });
       topdoc.generate((function(){
         var caseTopdociFrame, resultiFrame;
-        caseTopdociFrame = read(path.join('test', 'cases', 'iframe', 'overlay.overlay.html'), 'utf8');
-        resultiFrame = read(path.join('fulldocs/', 'overlay.overlay.html'), 'utf8');
+        caseTopdociFrame = read(path.join('test', 'cases', 'iframe', 'overlay.overlay.html'), 'utf8').trim();
+        resultiFrame = read(path.join('fulldocs/', 'overlay.overlay.html'), 'utf8').trim();
         resultiFrame.should.equal(caseTopdociFrame);
         if(fs.existsSync('fulldocs')){
           fs.removeSync('fulldocs');
