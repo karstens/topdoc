@@ -1,0 +1,33 @@
+{
+  "author": "Garth Braithwaite <garthdb@gmail.com> (http://www.garthdb.com)",
+  "name": "topdoc-demo",
+  "description": "A demo for Topdoc",
+  "version": "0.4.0",
+  "repository": "git@github.com:topcoat/topdoc.git",
+  "keywords": [
+    "css",
+    "style",
+    "documentation",
+    "usage"
+  ],
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "main": "./lib/topdoc",
+  "bin": {
+    "topdoc": "./bin/topdoc"
+  },
+  "preferGlobal": "true",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "topdoc-parse": "0.0.4"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
